@@ -1,0 +1,9 @@
+<div *ngIf="loaded">
+  <app-header></app-header>
+  <section class="mat-typography">
+    <router-outlet></router-outlet>
+  </section>
+  <!-- <p>{{count}}</p> -->
+  <!-- <p>{{(count | async)?.count}}</p> -->
+  <app-footer [count]="count"></app-footer>
+</div>

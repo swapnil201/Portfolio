@@ -1,0 +1,21 @@
+<mat-card class="text-card">
+  <mat-card-title>General</mat-card-title>
+  <mat-card-content>
+    <div class="example-container">
+      <form [formGroup]= "profileForm" class="example-container">
+        <mat-form-field>
+          <input matInput formControlName = "name" placeholder="Name">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <input matInput formControlName = "designation" placeholder="Desgination">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <input matInput formControlName = "qualification" placeholder="Qualification">
+        </mat-form-field>
+      </form>
+    </div>
+    <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+  </mat-card-content>
+</mat-card>
